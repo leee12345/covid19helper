@@ -1,0 +1,3 @@
+rootProject.name = "COVID-19Helper"
+include ':app'
+include ':zxblibrary'

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SegregationActivity">
+
+    <RelativeLayout
+        style="@style/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_seg"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/swgText"
+            style="@style/top_bar_title"
+            android:text="各地隔离政策"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+        <ImageView
+            android:id="@+id/geli_imgView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/gradient"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:id="@+id/center_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/gery_gradient"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/start_tv"
+                        android:layout_width="160dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="left"
+                        android:text="出发地"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/start_place"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:entries="@array/pro_list"
+                            android:textAlignment="center"
+                            app:backgroundTint="@color/black" />
+
+                        <EditText
+                            android:id="@+id/start_et"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/transfer"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/transfer" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/end_tv"
+                        android:layout_width="160dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="left"
+                        android:text="目的地"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/end_place"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:entries="@array/pro_list"
+                            app:backgroundTint="@color/black" />
+
+                        <EditText
+                            android:id="@+id/end_et"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/geli_search_btn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gery_gradient"
+            android:text="查询"
+            android:textSize="20sp" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/seg_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/gery_gradient">
+
+            <TextView
+                android:id="@+id/tv_s"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="出发地"
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/start_content"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentBottom="true"
+                android:text="TextView" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/gery_gradient">
+
+            <TextView
+                android:id="@+id/tv_e"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="目的地"
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/end_content"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentBottom="true"
+                android:text="TextView" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

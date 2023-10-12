@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all"
+            android:title="疫情新闻" />
+        <item
+            android:id="@+id/nav_domestic"
+            android:title="国内疫情新闻" />
+        <item
+            android:id="@+id/nav_foreign"
+            android:title="国外疫情新闻" />
+        <item
+            android:id="@+id/nav_miao"
+            android:title="疫苗" />
+        <item
+            android:id="@+id/nav_return"
+            android:title="返回" />
+    </group>
+</menu>

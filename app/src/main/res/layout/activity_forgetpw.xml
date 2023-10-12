@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/page_bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout style="@style/top_bar">
+
+
+        <TextView
+            android:id="@+id/forget_title"
+            style="@style/top_bar_title"
+            android:text="忘记密码"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout style="@style/edit_item">
+
+        <TextView
+            android:id="@+id/tel_text"
+            style="@style/edit_item_left"
+            android:text="手机号:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tel"
+            style="@style/edit_item_right"
+            android:hint="" />
+    </LinearLayout>
+
+    <View style="@style/hr_1dp"></View>
+
+    <LinearLayout style="@style/edit_item">
+
+        <TextView
+            android:id="@+id/newpass_text"
+            style="@style/edit_item_left"
+            android:text="新密码:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/newpass"
+            style="@style/edit_item_right"
+            android:hint=""
+            android:password="true" />
+    </LinearLayout>
+
+    <View style="@style/hr_1dp"></View>
+
+    <LinearLayout style="@style/edit_item">
+
+        <TextView
+            android:id="@+id/confirm_text"
+            style="@style/edit_item_left"
+            android:text="确认密码:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/confirm"
+            style="@style/edit_item_right"
+            android:hint=""
+            android:password="true" />
+    </LinearLayout>
+
+    <View style="@style/hr_1dp"></View>
+
+    <LinearLayout style="@style/edit_item">
+
+        <TextView
+            android:id="@+id/vcLogin_text"
+            style="@style/edit_item_left"
+            android:text="验证码:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/vcLogin"
+            style="@style/edit_item_right"
+            android:hint="" />
+
+        <Button
+            android:id="@+id/getVcBtn"
+            android:layout_width="130dp"
+            android:layout_height="46dp"
+            android:text="获取验证码"></Button>
+    </LinearLayout>
+
+    <View style="@style/hr_1dp"></View>
+
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login_bg"
+        android:text="重置"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

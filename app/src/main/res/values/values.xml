@@ -1,0 +1,127 @@
+
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="btn_login1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/login_bg</item>
+        <item name="android:textColor">@color/btn_text</item>
+
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+
+    <style name="regist1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/regist_bg</item>
+        <item name="android:textColor">@color/login_bg</item>
+
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+
+    <style name="hr_1dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#D3D3D3</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="page_bg">
+        <item name="android:background">#FBFBFB</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="page_bg2">
+        <item name="android:background">#ffffff</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="edit_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+    <style name="edit_item2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+    <style name="edit_item_left">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#424242</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="edit_item_left2">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="edit_item_right">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#424242</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="top_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:background">@color/top_bar_bg</item>
+    </style>
+
+    <style name="top_bar_left">
+        <item name="android:layout_width">66dp</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="top_bar_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">66dp</item>
+        <item name="android:layout_marginRight">66dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="top_bar_right">
+        <item name="android:layout_width">66dp</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="TransparentDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>
